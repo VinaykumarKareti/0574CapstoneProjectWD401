@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAyON</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: black;
+        }
+
+        nav {
+            width: 100vw;
+            height: 87px;
+            box-shadow: 0 0 10px 0;
+            background-color: beige;
+            font-weight: bold;
+            /* position: fixed; */
+            /* margin: 0; */
+
+        }
+
+        label.logo {
+            color: rgb(54, 188, 188);
+            line-height: 100px;
+            margin-left: 180px;
+            padding-left: 15px;
+            font-size: 40px;
+            /* text-decoration: wavy; */
+            /* text-shadow: 2px 2px 5px rgb(112, 111, 111); */
+        }
+
+        nav ul {
+            float: right;
+            font-size: 14px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        section {
+            /* background-color: rgb(53, 54, 54); */
+            height: 100%;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding-left: 15px;
+            line-height: 65px;
+            text-transform: capitalize;
+        }
+
+        li:hover {
+            font-size: 15px;
+            color: orange;
+            padding-left: 8px;
+        }
+
+        .v {
+            padding: 0 0 0 370px;
+            background-color: rgb(89, 88, 88);
+        }
+
+        .transm {
+            margin: 20px;
+            background-color: rgb(54, 183, 212);
+            padding: 6px 0 0 19px;
+            border-radius: 10px;
+        }
+
+        .switch {
+            margin: 20px;
+            background-color: rgb(54, 183, 212);
+            padding: 6px 0 0 19px;
+            border-radius: 10px;
+        }
+
+        .boxmain {
+            display: inline-block;
+        }
+
+        .box p {
+            font-family: cursive;
+            text-align: center;
+        }
+
+        .box:hover {
+            background-color: rgb(89, 209, 209);
+        }
+
+        .box img {
+            /* font-size: 5px; */
+            height: 60px;
+            padding: 15px 0 0 25px;
+            /* border: ; */
+        }
+
+        .box {
+            height: 100px;
+            width: 90px;
+            display: inline-block;
+            box-sizing: border-box;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: rgb(186, 235, 249);
+        }
+
+        nav li a {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+
+        li a:hover {
+            color: rgb(6, 139, 176);
+        }
+
+        .sw {
+            display: flex;
+        }
+
+        .size2 {
+            height: 22px;
+            width: 24px;
+        }
+
+        .a1 {
+            font-size: 17px;
+            font-family: cursive;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+        }
+
+        .a2 {
+            font-size: 12px;
+            font-family: cursive;
+            padding-left: 6px;
+            color: aliceblue;
+        }
+
+        .a3 {
+            font-size: 17px;
+            font-family: cursive;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+        }
+
+        .a4 {
+            font-size: 12px;
+            font-family: cursive;
+            padding-left: 6px;
+            color: aliceblue;
+        }
+
+        footer {
+            background-color: rgb(170, 240, 240);
+            height: 200px;
+            padding: 30px;
+        }
+        .vin{
+            background-color: aliceblue;
+            border-radius: 15px;
+            margin: 20px 10px 10px 20px;
+        }
+        .vinay{
+            
+            margin:20px 0 10px 20px;
+            
+            padding: 10px 0 0 220px;
+        }
+        .mySlides {
+            display: none;
+        }
+
+  footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-button {
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  .download-button img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  .download-label {
+    color: white;
+    font-weight: bold;
+  }
+  .app-store-label {
+    color: white;
+  }
+  .footer-content {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+  }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label for="" class="logo">PAyON</label>
+
+            <ul>
+                <li><a href="http://localhost:8000/">payon for customer</a></li>
+                <li><a href="http://localhost:8080/">Transfer Self</a></li>
+                <li><a href="/htmlfiles/company.html">Company</a></li>
+                <!-- <li><a href="./login.html"><input type="button" value="" class="sign"></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="v">
+            <img class="mySlides" src="/icons/upislideshow1.jpeg" style="width:700px" height="200px">
+            <img class="mySlides" src="/icons/slideshow2.webp" style="width:700px" height="200px">
+            <img class="mySlides" src="/icons/slideshow3.jpg" width="700px" height="200px"><br><br>
+        </div>
+
+        <div class="transm">
+            <h1 style="font-family: cursive; color: white;">Recharge & Pay Bills on Paytm</h1>
+            <br>
+            <div class="mainbox">
+                <div class="box a"><a href="http://localhost:8000/"><img src="/icons/icons1.png" alt="">
+                        <p>Recharge</p>
+                    </a></div>
+                <div class="box a"><a href="http://localhost:8000/"><img src="/icons/icon2.png" alt="">
+                        <p>ElectricBills</p>
+                    </a></div>
+                <div class="box a"><a href="http://localhost:8000/"><img src="/icons/icon3.png" alt="">
+                        <p>DTH</p>
+                    </a></div>
+                <div class="box a"><a href="http://localhost:8000/"><img src="/icons/icon4.png" alt="">
+                        <p>LPG</p>
+                    </a></div><br><br>
+                <div class="box b"><a href="http://localhost:8000/"><img src="/icons/icon5.png" alt="">
+                        <p>Network</p>
+                    </a></div>
+                <div class="box b"><a href="http://localhost:8000/"><img src="/icons/icon6.png" alt="">
+                        <p>Postpaid</p>
+                    </a></div>
+                <div class="box b"><a href="http://localhost:8000/"><img src="/icons/icon7.png" alt="">
+                        <p>Education</p>
+                    </a></div>
+            </div>
+        </div>
+        <div class="switch">
+            <h1 style="font-family: cursive; color: rgb(50, 49, 49);">Switch</h1><br>
+            <div class="box a"><a href="http://localhost:8000/"><img src="/icons/tic1.png" alt="">
+                    <p>Rail Tickets</p>
+                </a></div>
+            <div class="box a"><a href="http://localhost:8000/"><img src="/icons/tic2.png" alt="">
+                    <p>Bus Tickets</p>
+                </a></div>
+            <div class="box a"><a href="http://localhost:8000/"><img src="/icons/tic3.png" alt="">
+                    <p>Flight Tic</p>
+                </a></div>
+            <div class="box a"><a href="http://localhost:8000/"><img src="/icons/tic4.png" alt="">
+                    <p>MovieTickets</p>
+                </a></div>
+        </div>
+        <div class="sw">
+            <div class="sinner">
+                <img src="/icons/myntra2.png" alt="">
+            </div>
+            <div class="sinner2" style="padding-top: 70px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id voluptate cum modi deleniti totam
+                    fugit itaque vero commodi nihil mollitia recusandae ad consectetur accusamus atque eius unde ut,
+                    tempora nobis aperiam! Tenetur, laborum quia dolores ullam recusandae neque quo consectetur
+                    deleniti?</p>
+
+            </div>
+            <!-- <p>,nsfknckjjk jsjgk j</p> -->
+            
+        </div>
+        <div class="vin">
+            <h1 style="text-align: center; font-family: cursive;">Mutual Funds</h1>
+            <div class="vinay">
+            <img src="/icons/phone1.jpg" alt="" style="height: 350px; width: 400px;">
+        </div>
+            <p style="padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum blanditiis magni iste soluta exercitationem. Cumque aut, ducimus quas tempore itaque libero rerum asperiores quidem deleniti assumenda? Iure, nostrum. Eum qui dolorum aliquam quae labore sapiente consectetur ex nisi possimus magnam dolores, doloribus harum natus rerum illo ea aliquid nostrum repellendus architecto beatae numquam! Libero aliquam nulla numquam odit tenetur beatae sed explicabo. Veritatis dolorem error voluptatibus?</p>
+        
+    </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <p>Download Paytm App to Pay from anywhere</p>
+            <button class="download-button">
+                <img src="/icons/playstrorelogo.png" alt="">
+                <span class="download-label">Download for Android</span><br>
+                <span class="app-store-label">On the Google Play Store</span>
+            </button>
+            <button class="download-button">
+                <img src="/icons/apple.jpeg" alt="">
+                <span class="download-label">Download for iOS</span><br>
+                <span class="app-store-label">On the App Store</span>
+            </button>
+            <div class="footer-content">
+                <p>&copy; 2023 PayON. All rights reserved.</p>
+                <p>Terms of Use | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>

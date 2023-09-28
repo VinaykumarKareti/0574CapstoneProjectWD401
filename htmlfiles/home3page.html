@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paytm</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        li a{
+            color: black;
+            font-size: 20px;
+        }
+        nav{
+            width: 100%;
+            height: 87px;
+            box-shadow: 0 0 10px 0;
+            background-color: beige;
+            font-weight:bold ;
+            /* position: fixed; */
+            /* margin: 0; */
+
+        }
+        label.logo{
+            color: rgb(4, 137, 137);
+            line-height: 100px;
+            margin-left: 180px;
+            padding-left:15px ;
+            font-size: 40px;
+            /* text-decoration: wavy; */
+            /* text-shadow: 2px 2px 5px rgb(112, 111, 111); */
+        }
+        nav ul{
+            float: right;
+            font-size: 14px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    nav ul li{
+        display: inline-block;
+        padding-left: 15px;
+        line-height: 65px;
+        text-transform: capitalize;
+    }
+    section{
+        /* width: 100%; */
+        height: 70vh;
+        margin-top: 30px;
+        margin-left:55px ;
+        background-color: white;
+        /* box-shadow: 0px 3px 6px rgb(132, 133, 133) inset;     */
+        border-radius: 3px;
+        padding-top: 80px;
+        display: flex;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .pho{
+        height: 55vh;
+        width: 50vw;
+        position: relative;
+        left: 150px;
+        
+    }
+    .desc{
+        font-weight: bold;
+        
+        font-family: cursive;
+        font-size: 45px;
+        
+    }
+    .button{
+        /* font-family: cursive; */
+        border-radius: 25px;
+        height: 28px;
+        padding:0 15px ;
+        cursor: pointer;
+        /* width: 200px; */
+        font-family: cursive; font-weight:bold ;
+        background-color: black;
+        color: whitesmoke;
+    }
+    /* .button:hover{
+        background-color: rgb(59, 57, 57);
+        height: 30px;
+        padding: o 17px;
+    } */
+    .pho2{
+        width: 180px;
+        height: 55px;
+        padding-left: 20px;
+    }
+    .es:hover{
+      color: blueviolet;
+    }
+    li a:hover{
+        color: rgb(10, 129, 176);
+    }
+    .mid{
+        text-align: center;
+        font-size: 12px;
+        /* border-radius: 2px; */
+        background-color: rgb(161, 242, 242);
+    }
+    footer{
+        background-color: rgb(170, 240, 240);
+        height: 200px;
+        padding: 30px;
+        color: blue;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .sign{
+        background-color: rgb(87, 87, 244);
+        border: 1px solid rgb(87, 87, 244);
+        border-radius: 14px;
+        padding: 2px 5px;
+    }
+    .imgsize{
+        height: 17px;
+        height: 17px;
+    }
+
+    .size2{
+        height: 22px;
+        width: 24px;
+    }
+    /* CSS for mobile screens */
+
+@media (max-width: 767px) {
+  nav {
+    height: 75px;
+    border: 2px solid red;
+    /* line-height: 80px; */
+  }
+  nav ul li a{
+    border: 2px solid white;
+  }
+  
+  label.logo {
+    margin-left: 20px;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    display: none;
+    /* margin: 10px;
+    text-align: center; */
+  }
+  .menu{
+    display: block;
+    position: relative;
+    position: relative;
+    left:345px;
+    bottom: 60px;
+    background-color: rgb(213, 239, 241);
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+  }
+  .menu
+  
+  nav ul li {
+    display: block;
+    padding: 5px;
+    line-height: 35px;
+  }
+  
+  section {
+    height: auto;
+    margin: 20px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pho {
+    height: 40vh;
+    width: 80vw;
+    position: static;
+    margin: 0 auto;
+  }
+  
+  .desc {
+    font-size: 32px;
+  }
+  
+  .button {
+    font-size: 12px;
+    height: 20px;
+    padding: 0 10px;
+  }
+  
+  .pho2 {
+    height: 40px;
+    width: 120px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .mid {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <label for="" class="logo">PAyON</label>
+        <button class="menu" id="menu-button">Menu</button>
+        
+            <ul id="menu">
+                <li><a href="/htmlfiles/home_transaction_page.html">payon for customer</a></li>
+                <li><a href="http://localhost:8080/">Transfer Self</a></li>
+                <li><a href="/htmlfiles/company.html">Company</a></li>
+                <li><a href="#"><img class="es" src="/icons/profile_login.jpeg" alt="" width="30px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <p class="mid">No Wallet KYC Required
+        😊to pay using UPI on Paytm.Learn more.</p>
+    <section>
+        <div class="tex">
+        <img class="pho2" src="/icons/paytm_logo.png" alt=""> <br>
+        <label for="" class="desc">Your's Most loved <br>Payments App</label>
+        <br> <br>
+        <p>Recharge & pay bills, book flights & movie tickets,<br> open a savings account, invest in stocks <br>& mutual funds, and do a lot more.</p>
+        <br><h4 style="font-family: cursive;">The Fastest Way to Pay In-store & Online.</h4>
+        <br>
+        <button class="button" type="button"><a href="https://play.google.com" target="_blank"><label class="button">Download PAyON App on </label><img class="imgsize" src="/icons/apple.jpeg" alt=""> <img class="imgsize" src="/icons/playstrorelogo.png" alt=""></a></button>
+    </div>
+    <div class="img">
+        <img src="/icons/logo2.webp" alt="" class="pho">
+    </div>
+    </section>
+    <!-- <footer>
+        <div class="foot">
+            <p>Download Paytm App to Pay from anywhere</p><br>
+            <button style="background-color: black; border-radius: 10px; cursor: pointer;"><img class="size2" src="./playstrorelogo.png" alt=""> <label class="a1">Download Form </label><br><label class="a2">app store </label></button> <br>
+            <br><button style="background-color: black; border-radius: 10px; cursor: pointer;"><a style="cursor: pointer;" href="https://www.apple.com/app-store"></a><img class="size2" src="./apple.jpeg" alt=""> <label class="a3">Download Form </label><br><label class="a4">app store </label></a></button>
+
+        </div> -->
+        
+    <!-- </footer> --> 
+
+    <footer>
+  <div class="footer-container">
+    <p>&copy; 2023 Example Company. All rights reserved.</p><br>
+    <ul>
+      <li><a style="color: blue;" href="#">Privacy Policy</a></li><br>
+      <li><a style="color: blue;" href="#">Terms of Use</a></li><br>
+      <li><a style="color: blue;" href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+    const menuButton = document.getElementById('menu-button');
+const menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+</script>
+
+</body>
+</html>

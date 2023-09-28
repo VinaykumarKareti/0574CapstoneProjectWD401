@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #a5a5a5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 270px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: slide-in 0.5s ease-in-out;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #007BFF; /* Blue color for header text */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #333; /* Dark gray color for labels */
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #92afb4;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .oo {
+            background: linear-gradient(80deg, orange, rgb(251, 105, 105));
+        }
+
+        @keyframes slide-in {
+            0% {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Transfer to self</h1>
+        </div>
+        <form method="get" action="/trans">
+            <div class="form-group">
+                <label for="username">Acc No :-</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="rupees">Rupees Amount:</label>
+                <input type="number" id="rupees" name="rupees" required>
+            </div>
+            <button class="oo" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

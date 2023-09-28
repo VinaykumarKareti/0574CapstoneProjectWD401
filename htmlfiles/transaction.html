@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #007bff;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Money Transfer</h2>
+        <form action="/tranToOthers" method="get">
+            <div class="form-group">
+                <label for="fromAcc">From Account:</label>
+                <input type="text" id="fromAcc" name="fromAcc" required>
+            </div>
+            <div class="form-group">
+                <label for="toAcc">To Account:</label>
+                <input type="text" id="toAcc" name="toAcc" required>
+            </div>
+            <div class="form-group">
+                <label for="rupeesAmount">Rupees Amount:</label>
+                <input type="number" id="rupees" name="rupees" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Transfer Money">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
